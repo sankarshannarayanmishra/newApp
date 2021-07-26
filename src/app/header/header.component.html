@@ -1,0 +1,34 @@
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    
+    
+  
+    <div class="navbar-collapse row" >
+        <div class="col-10 col-md-10 col-sm-10">
+
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#" routerLink="/home" routerLinkActive="active">Home </a>
+                </li>
+                <li class="nav-item" *ngIf="nav.visible">
+                  <a class="nav-link" href="#" routerLink="/gallery" routerLinkActive="active">Gallary</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#" routerLink="/about" routerLinkActive="active">About</a>
+                  </li>
+               
+              </ul>
+        </div>
+        <div class="col-2 col-md-2 col-sm-2">
+            <ul class="navbar-nav mr-auto">
+            <li class="nav-item">
+                <button type="button" *ngIf="nav.loginVisible" class="btn btn-dark" href="#" routerLink="/login" routerLinkActive="active">Login</button>
+              </li>
+              <li class="nav-item">
+                <button type="button" *ngIf="nav.visible" class="btn btn-dark" href="#" routerLink="/home" routerLinkActive="active">Logout</button>
+              </li>
+            </ul>
+        </div>
+     
+      
+    </div>
+  </nav>
